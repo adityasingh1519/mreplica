@@ -1,0 +1,436 @@
+/* navbar */
+*{
+ 
+  font-family: 'Poppins', sans-serif; 
+}
+
+
+
+.box{
+  background-color: #fffdf4;
+  width: 100%;
+  background-color: blue;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.box-overlay{
+  
+   height: 100%;
+   width: 100%;
+   background-color: rgb(224, 179, 115,0.50);
+   position: absolute;
+   top: 0;
+   
+   translate: 100% 100%;
+
+
+   transition: all 0.5s linear;
+
+   
+
+}
+
+
+.overflow-h:hover .box-overlay{
+ 
+  translate: 0% 0%;
+
+}
+
+
+
+.center-box{
+  /* background-color: blanchedalmond; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.cov{
+  background-color: brown; 
+  clip-path: polygon(0% 50%, 10% 0%, 90% 0%,100% 50%,90% 100%,10% 100%);
+
+}
+
+.center{
+  
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+
+.d-center{
+  display: flex;
+  align-items: center;
+
+}
+
+.deg-90 {
+  position: relative;
+  transform: rotate(-90deg);
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  top: 4rem;
+}
+
+
+
+.d-block {
+  clip-path: polygon(0% 0%, 100% 0%, 90% 100% , 10% 100%);
+}
+
+
+html{
+  overflow-x: hidden;
+}
+
+.imgcat{
+  /* position: relative; */
+  transform: rotate(45deg);
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute;
+  right: 4rem;
+  margin-top: 4rem; */
+}
+
+.imgcat2{
+
+  width: 80%;
+  
+
+}
+
+/* .img-cover{
+  clip-path: polygon(0% 50%, 10% 0%, 50% 0%, 40% 100%, 10% 100%);
+  background-color: brown;
+} */
+
+
+
+.fixed-txt{
+  width: 100%;
+  height: 60vh;
+  background-image: url("https://picsum.photos/2080/1080/?black");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+}
+
+
+.footer{
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/783/870/534/blue-dark-handrail-lights-wallpaper-preview.jpg");
+
+  background-attachment: fixed;
+  width: 100%;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  font-weight: 600;
+ 
+}
+
+.footer p{
+  font-size: 9px;
+  font-family: poppinsregulars;
+  
+}
+
+.skew25{
+  transform: skewX(-25deg);
+  overflow: hidden;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-overlay{
+  display: inline-block;
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-shadow: #303133;
+  
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.navlist{
+  list-style: none;  
+  box-sizing: border-box;
+}
+
+ a {
+  text-decoration: none;
+}
+
+nav{
+  background: #303133;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  
+  justify-content: space-between;
+  position: fixed;
+  z-index: 22;
+  transition: ease-in 2s linear;
+  /* align-items: center; */
+}
+
+
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+label.logo{
+  color: rgb(229, 228, 240);
+  font-size: 2.5rem;
+  line-height: 75px;
+  margin-left:  7vw;
+  font-weight: bold;
+
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.loading-spinner {
+  animation: spin 1s linear infinite;
+}
+
+.my-auto{
+  margin: auto 0px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 7vw;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 75px;
+  font-size: 15px;
+  margin: 0 2vw;
+}
+
+.navlist  li a {
+  text-transform: uppercase;
+  color: beige;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif; 
+}
+
+active, a:hover {
+  color: whitesmoke;
+  border-bottom: 4px solid whitesmoke;
+  padding-bottom: 4px;
+} 
+
+
+.nav-mob-btn{
+  display: none;
+  float: right;
+}
+
+.nav-mob-icon{
+   float: right;
+   background-color: transparent;
+   height: 35px;
+   cursor: pointer;
+  
+}
+.nav-mob-icon[name="faXmark"]
+{
+  display: none;
+}
+
+/* .navsm{
+  width: 70vw;
+  background-color: #303133;
+  height: 75px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 40px;
+  z-index: 999;
+}
+.navlist-s {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+.navlist-s li a {
+  text-decoration: none;
+  color: whitesmoke; 
+}
+   */
+
+   .navsm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65vw;
+    background-color: #303133;
+    height: 75px;
+    margin-inline: auto;
+    position: relative;
+    bottom: 40px;
+    z-index: 999;
+  }
+
+  ul{
+    list-style: none;
+
+  }
+
+  .navlist-s {
+    list-style-type: none;
+    display: flex;
+    
+  }
+
+  .navlist-s li a {
+    text-decoration: none;
+   margin: auto 2.5rem;
+   color: whitesmoke;
+   
+  }
+
+
+
+
+
+
+@media all and (max-width: 850px) {
+
+  label.logo{
+    font-size: 2.1rem;
+    margin-left:  3vw;
+  }
+
+  nav ul{
+    margin-right: 3vw;
+  }
+
+  nav ul li {
+    font-size: 14px;
+    margin: 0 0.9vw;
+  }
+
+}
+
+
+
+@media all and (max-width: 640px) {
+
+  .navlist{
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.85);
+    position: absolute;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    transform: translateX(100%);
+
+    transition: all 0.5s linear;
+    
+    opacity : 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+
+  .nav-mob-btn{
+    display: inline-block;
+    margin-right: 3vw;
+    z-index: 999;
+  }
+
+  .active .navlist {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .active .nav-mob-btn .nav-mob-icon[name="faXmark"]
+  {
+    display: block;
+  }
+
+  .active .nav-mob-btn .nav-mob-icon[name="faBars"]
+  {
+    display: none ;
+  }
+
+}
+
+.overflow-h{
+  overflow: hidden;
+}
+
+.relative{
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.visually-hidden{
+  display: none;
+}
+
+.welcome{
+  color: rgba(165, 146, 146, 0.55);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 550;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
